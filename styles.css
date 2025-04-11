@@ -16,6 +16,9 @@ body {
   background-position: center;
   background-repeat: none;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -49,10 +52,11 @@ body {
 
 #call_to_action > a > .button {
   border: none;
-  width: 16vw;
+  width: 190px;
   border-radius: 60px;
-  height: 3.3vw;
-  font-size: 1.1vw;
+  height: 50px;
+  font-size: 1em;
+  margin: 12px;
   background-color: #7e989e;
   color: #c2d3d6;
   font-family: helvetica;
@@ -73,39 +77,31 @@ body {
   padding-bottom: 12px;
 }
 
-
-
-@media (max-width: 1300px) {
+@media (min-width: 768px) {
   #header {
-    height: 100%;
-    padding-bottom: 100px;
-  }
-
-  #call_to_action > a > .button {
-    width: 17vw;
-    height: 40px;
-    font-size: 0.9em;
-  }
-
-}
-
-
-@media (max-width: 845px) {
-  #call_to_action > h1 {
-    font-size: 12vw;
-  }
-
-  #call_to_action > a > .button {
-    width: 25vw;
-    height: 40px;
-    font-size: 0.9em;
+  min-height: 760px;
   }
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   #header {
-    height: 100vh;
+    height: 65vh;
+    min-height: 500px;
+  }
+
+  #call_to_action > a > .button {
+    width: 24vw;
+    height: 38px;
+    font-size: 0.8em
+  }
+
+} 
+
+
+@media (max-width: 425px) {
+  #header {
+    height: 46rem;
     padding-bottom: 0px;
   }
   
@@ -131,6 +127,12 @@ body {
     padding-bottom: 15px;
   }
 
+  #call_to_action > h2 {
+    font-size: 1.4em;
+    padding-top: 1em;
+    padding-bottom: 0;
+  }
+
   #call_to_action > a > .button {
     width: 160px;
     height: 40px;
@@ -138,6 +140,16 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  #call_to_action > h2 {
+    font-size: 1.2em;
+
+  }
+
+  #header {
+    height: 39rem;
+  }
+}
 
 
 
