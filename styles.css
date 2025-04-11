@@ -398,6 +398,22 @@ footer > p {
     font-size: 0.9em;
     }
 
+  .review_section > h2 {
+    font-size: 1.95em;
+    margin-bottom: 50px;
+  }
+
+  .review_section {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .review_section > a > .button {
+    display: none;
+  }
+
 }
 
 @media (max-width: 320px) {
